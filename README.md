@@ -1,2 +1,6 @@
 # SQL-COALESCE
-A cláusula SELECT * seleciona todas as colunas da tabela, enquanto COALESCE é usada para fornecer valores padrão para as colunas que podem ser nulas.
+
+SELECT *,
+       COALESCE(column1, 'N/A') AS column1_coalesced,
+       COALESCE(column2, 0) AS column2_coalesced
+FROM table_name;
